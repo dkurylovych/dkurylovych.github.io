@@ -74,33 +74,46 @@ $(function() {
   <div class="headertitle"><div class="title">GameCarrier.Services.Adapter.GcServiceConnectionBase Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Base class for service connection (client session)  
+ <a href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_connection_base.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_connection_base_1_1_operation_context.html">OperationContext</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Context of Service Operation (without argument)  <a href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_connection_base_1_1_operation_context.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a70d8b192eace4afbbbefe38539f505d4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_connection_base.html#a70d8b192eace4afbbbefe38539f505d4">GcServiceConnectionBase</a> (<a class="el" href="class_game_carrier_1_1_services_1_1_service_name.html">ServiceName</a> serviceName, IntPtr id)</td></tr>
+<tr class="memdesc:a70d8b192eace4afbbbefe38539f505d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">.ctor of connection  <a href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_connection_base.html#a70d8b192eace4afbbbefe38539f505d4">More...</a><br /></td></tr>
 <tr class="separator:a70d8b192eace4afbbbefe38539f505d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5ce175e386375e49227c7c9090f5690"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_connection_base.html#ae5ce175e386375e49227c7c9090f5690">Dispose</a> (bool disposing)</td></tr>
+<tr class="memdesc:ae5ce175e386375e49227c7c9090f5690"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dispose logic of connection  <a href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_connection_base.html#ae5ce175e386375e49227c7c9090f5690">More...</a><br /></td></tr>
 <tr class="separator:ae5ce175e386375e49227c7c9090f5690"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f0e045b4934cd787880e8fbfa18bb6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_connection_base.html#a4f0e045b4934cd787880e8fbfa18bb6b">RegisterOperationHandler</a> (string operationName, Action&lt; <a class="el" href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_connection_base_1_1_operation_context.html">OperationContext</a> &gt; handler)</td></tr>
+<tr class="memdesc:a4f0e045b4934cd787880e8fbfa18bb6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register handler for operation  <a href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_connection_base.html#a4f0e045b4934cd787880e8fbfa18bb6b">More...</a><br /></td></tr>
 <tr class="separator:a4f0e045b4934cd787880e8fbfa18bb6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9552277f50ac63343d6fb1922e7ed1a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_connection_base.html#a9552277f50ac63343d6fb1922e7ed1a0">RegisterOperationHandler&lt; R &gt;</a> (string operationName, Action&lt; <a class="el" href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_connection_base_1_1_operation_context.html">OperationContext</a>, R &gt; handler)</td></tr>
+<tr class="memdesc:a9552277f50ac63343d6fb1922e7ed1a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register handler for operation (with argument)  <a href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_connection_base.html#a9552277f50ac63343d6fb1922e7ed1a0">More...</a><br /></td></tr>
 <tr class="separator:a9552277f50ac63343d6fb1922e7ed1a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5443d107b701c36b8379551e6c4c209"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_connection_base.html#aa5443d107b701c36b8379551e6c4c209">OnUnhandledError</a> (<a class="el" href="class_game_carrier_1_1_services_1_1_exceptions_1_1_service_operation_exception.html">ServiceOperationException</a> serviceException)</td></tr>
+<tr class="memdesc:aa5443d107b701c36b8379551e6c4c209"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raise UnhandledError event  <a href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_connection_base.html#aa5443d107b701c36b8379551e6c4c209">More...</a><br /></td></tr>
 <tr class="separator:aa5443d107b701c36b8379551e6c4c209"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95338d49747f7240cd1fcdb63cc109c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_connection_base.html#a95338d49747f7240cd1fcdb63cc109c3">SendEvent</a> (string eventName, params IMessage[] messages)</td></tr>
-<tr class="separator:a95338d49747f7240cd1fcdb63cc109c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66af1dafc166c5a06dd8349609b0897f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_connection_base.html#a66af1dafc166c5a06dd8349609b0897f">SendEvent</a> (string eventName, params IMessage[] arguments)</td></tr>
+<tr class="memdesc:a66af1dafc166c5a06dd8349609b0897f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send Event to Client immediately  <a href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_connection_base.html#a66af1dafc166c5a06dd8349609b0897f">More...</a><br /></td></tr>
+<tr class="separator:a66af1dafc166c5a06dd8349609b0897f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="events" name="events"></a>
 Events</h2></td></tr>
 <tr class="memitem:a11c27fe22fc509a04ede4afb7c60e643"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_game_carrier_1_1_services.html#a585f92b01ef82e2c159fc68c14076c6c">ServiceUnhandledErrorHandler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_connection_base.html#a11c27fe22fc509a04ede4afb7c60e643">UnhandledError</a></td></tr>
+<tr class="memdesc:a11c27fe22fc509a04ede4afb7c60e643"><td class="mdescLeft">&#160;</td><td class="mdescRight">UnhandledError event allows to receive all exceptions over event  <a href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_connection_base.html#a11c27fe22fc509a04ede4afb7c60e643">More...</a><br /></td></tr>
 <tr class="separator:a11c27fe22fc509a04ede4afb7c60e643"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >Base class for service connection (client session) </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a70d8b192eace4afbbbefe38539f505d4" name="a70d8b192eace4afbbbefe38539f505d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a70d8b192eace4afbbbefe38539f505d4">&#9670;&nbsp;</a></span>GcServiceConnectionBase()</h2>
 
@@ -135,6 +148,15 @@ Events</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>.ctor of connection </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">serviceName</td><td>Service identity</td></tr>
+    <tr><td class="paramname">id</td><td>id of connection</td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -162,6 +184,14 @@ Events</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Dispose logic of connection </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">disposing</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="aa5443d107b701c36b8379551e6c4c209" name="aa5443d107b701c36b8379551e6c4c209"></a>
@@ -187,6 +217,14 @@ Events</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Raise UnhandledError event </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">serviceException</td><td>service exception</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -224,6 +262,15 @@ Events</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Register handler for operation </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">operationName</td><td>name of operation</td></tr>
+    <tr><td class="paramname">handler</td><td>operation handler</td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a9552277f50ac63343d6fb1922e7ed1a0" name="a9552277f50ac63343d6fb1922e7ed1a0"></a>
@@ -259,6 +306,21 @@ Events</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Register handler for operation (with argument) </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">R</td><td>Type of argument</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">operationName</td><td>name of operation</td></tr>
+    <tr><td class="paramname">handler</td><td>operation handler</td></tr>
+  </table>
+  </dd>
+</dl>
 <div class="typeconstraint">
 <dl><dt><b>Type Constraints</b></dt><dd>
 <table border="0" cellspacing="2" cellpadding="0">
@@ -271,8 +333,8 @@ Events</h2></td></tr>
 
 </div>
 </div>
-<a id="a95338d49747f7240cd1fcdb63cc109c3" name="a95338d49747f7240cd1fcdb63cc109c3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a95338d49747f7240cd1fcdb63cc109c3">&#9670;&nbsp;</a></span>SendEvent()</h2>
+<a id="a66af1dafc166c5a06dd8349609b0897f" name="a66af1dafc166c5a06dd8349609b0897f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66af1dafc166c5a06dd8349609b0897f">&#9670;&nbsp;</a></span>SendEvent()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -290,7 +352,7 @@ Events</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">params IMessage[]&#160;</td>
-          <td class="paramname"><em>messages</em>&#160;</td>
+          <td class="paramname"><em>arguments</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -304,6 +366,15 @@ Events</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Send Event to Client immediately </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">eventName</td><td>name of event</td></tr>
+    <tr><td class="paramname">arguments</td><td>event arguments</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -319,6 +390,8 @@ Events</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>UnhandledError event allows to receive all exceptions over event </p>
 
 </div>
 </div>

@@ -73,20 +73,35 @@ $(function() {
   <div class="headertitle"><div class="title">GameCarrier.Services.Adapter.GcServiceConnectionBase.OperationContext&lt; R &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Context of Service Operation (without argument)  
+ <a href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_connection_base_1_1_operation_context.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad6d38c9ed5c33db871795f5f1779cf57"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_connection_base_1_1_operation_context.html#ad6d38c9ed5c33db871795f5f1779cf57">SendResponse</a> (params IMessage[] messages)</td></tr>
-<tr class="separator:ad6d38c9ed5c33db871795f5f1779cf57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a044f109a2d8ea066fd9e09a56a65e27b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_connection_base_1_1_operation_context.html#a044f109a2d8ea066fd9e09a56a65e27b">SendResponse</a> (params IMessage[] parameters)</td></tr>
+<tr class="memdesc:a044f109a2d8ea066fd9e09a56a65e27b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send Response to Client for current operation  <a href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_connection_base_1_1_operation_context.html#a044f109a2d8ea066fd9e09a56a65e27b">More...</a><br /></td></tr>
+<tr class="separator:a044f109a2d8ea066fd9e09a56a65e27b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57db662a514d77d86245ad1c0a262ab9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_connection_base_1_1_operation_context.html#a57db662a514d77d86245ad1c0a262ab9">SendEvent</a> (string eventName, params IMessage[] messages)</td></tr>
+<tr class="memdesc:a57db662a514d77d86245ad1c0a262ab9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send Event to Client after current operation completed  <a href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_connection_base_1_1_operation_context.html#a57db662a514d77d86245ad1c0a262ab9">More...</a><br /></td></tr>
 <tr class="separator:a57db662a514d77d86245ad1c0a262ab9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:aa84426a55492b23cb89688152dae8af3"><td class="memItemLeft" align="right" valign="top">R&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_connection_base_1_1_operation_context.html#aa84426a55492b23cb89688152dae8af3">Argument</a><code> [get]</code></td></tr>
+<tr class="memdesc:aa84426a55492b23cb89688152dae8af3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Operation argument  <a href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_connection_base_1_1_operation_context.html#aa84426a55492b23cb89688152dae8af3">More...</a><br /></td></tr>
 <tr class="separator:aa84426a55492b23cb89688152dae8af3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >Context of Service Operation (without argument) </p>
+<p >Context of Service Operation (with argument) </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">R</td><td>Type of argument</td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a57db662a514d77d86245ad1c0a262ab9" name="a57db662a514d77d86245ad1c0a262ab9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a57db662a514d77d86245ad1c0a262ab9">&#9670;&nbsp;</a></span>SendEvent()</h2>
 
@@ -113,10 +128,19 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Send Event to Client after current operation completed </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">eventName</td><td></td></tr>
+    <tr><td class="paramname">messages</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="ad6d38c9ed5c33db871795f5f1779cf57" name="ad6d38c9ed5c33db871795f5f1779cf57"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad6d38c9ed5c33db871795f5f1779cf57">&#9670;&nbsp;</a></span>SendResponse()</h2>
+<a id="a044f109a2d8ea066fd9e09a56a65e27b" name="a044f109a2d8ea066fd9e09a56a65e27b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a044f109a2d8ea066fd9e09a56a65e27b">&#9670;&nbsp;</a></span>SendResponse()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -125,11 +149,19 @@ Properties</h2></td></tr>
           <td class="memname">void <a class="el" href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_connection_base_1_1_operation_context.html">GameCarrier.Services.Adapter.GcServiceConnectionBase.OperationContext</a>&lt; R &gt;.SendResponse </td>
           <td>(</td>
           <td class="paramtype">params IMessage[]&#160;</td>
-          <td class="paramname"><em>messages</em></td><td>)</td>
+          <td class="paramname"><em>parameters</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Send Response to Client for current operation </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td>parameters of response</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -153,6 +185,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Operation argument </p>
 
 </div>
 </div>

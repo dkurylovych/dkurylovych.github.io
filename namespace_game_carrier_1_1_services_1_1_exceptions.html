@@ -67,7 +67,8 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">GameCarrier.Services.Exceptions Namespace Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -75,18 +76,67 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_carrier_1_1_services_1_1_exceptions_1_1_service_connection_exception.html">ServiceConnectionException</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exception thrown when Client unable to connect to Service  <a href="class_game_carrier_1_1_services_1_1_exceptions_1_1_service_connection_exception.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_carrier_1_1_services_1_1_exceptions_1_1_service_disconnected_exception.html">ServiceDisconnectedException</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exception thrown when Client can send operation to Service, because Client is disconnected  <a href="class_game_carrier_1_1_services_1_1_exceptions_1_1_service_disconnected_exception.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_carrier_1_1_services_1_1_exceptions_1_1_service_handler_no_response_exception.html">ServiceHandlerNoResponseException</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exception thrown by Service in case, when Response was not sent during Request handling  <a href="class_game_carrier_1_1_services_1_1_exceptions_1_1_service_handler_no_response_exception.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_carrier_1_1_services_1_1_exceptions_1_1_service_handler_not_found_exception.html">ServiceHandlerNotFoundException</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exception thrown by Service in case, when unable to resolve handler for operation  <a href="class_game_carrier_1_1_services_1_1_exceptions_1_1_service_handler_not_found_exception.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_carrier_1_1_services_1_1_exceptions_1_1_service_not_found_exception.html">ServiceNotFoundException</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exception thrown when Discovery Service unable to find Service  <a href="class_game_carrier_1_1_services_1_1_exceptions_1_1_service_not_found_exception.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_carrier_1_1_services_1_1_exceptions_1_1_service_operation_exception.html">ServiceOperationException</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Service exception Base class  <a href="class_game_carrier_1_1_services_1_1_exceptions_1_1_service_operation_exception.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><b>ServiceOperationExceptionFactory</b></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Global factory for exception resolution by errorName <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_carrier_1_1_services_1_1_exceptions_1_1_service_operation_timeout_exception.html">ServiceOperationTimeoutException</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exception thrown by Client if Response didn't arrive client in specified timeout  <a href="class_game_carrier_1_1_services_1_1_exceptions_1_1_service_operation_timeout_exception.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_carrier_1_1_services_1_1_exceptions_1_1_service_serialization_exception.html">ServiceSerializationException</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exception thrown on serialization errors because of protocol violation  <a href="class_game_carrier_1_1_services_1_1_exceptions_1_1_service_serialization_exception.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a9af7cef8009c203e15fc5bf2ef3f6842"><td class="memItemLeft" align="right" valign="top">delegate <a class="el" href="class_game_carrier_1_1_services_1_1_exceptions_1_1_service_operation_exception.html">ServiceOperationException</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_game_carrier_1_1_services_1_1_exceptions.html#a9af7cef8009c203e15fc5bf2ef3f6842">ExceptionFactoryHandler</a> (string message)</td></tr>
+<tr class="memdesc:a9af7cef8009c203e15fc5bf2ef3f6842"><td class="mdescLeft">&#160;</td><td class="mdescRight">Factory method to build Exception object  <a href="namespace_game_carrier_1_1_services_1_1_exceptions.html#a9af7cef8009c203e15fc5bf2ef3f6842">More...</a><br /></td></tr>
+<tr class="separator:a9af7cef8009c203e15fc5bf2ef3f6842"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a9af7cef8009c203e15fc5bf2ef3f6842" name="a9af7cef8009c203e15fc5bf2ef3f6842"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9af7cef8009c203e15fc5bf2ef3f6842">&#9670;&nbsp;</a></span>ExceptionFactoryHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">delegate <a class="el" href="class_game_carrier_1_1_services_1_1_exceptions_1_1_service_operation_exception.html">ServiceOperationException</a> GameCarrier.Services.Exceptions.ExceptionFactoryHandler </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>message</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Factory method to build Exception object </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">message</td><td>exception message</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

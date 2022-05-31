@@ -74,33 +74,52 @@ $(function() {
   <div class="headertitle"><div class="title">GameCarrier.Services.IServiceClient Interface Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Interface of Service's Client  
+ <a href="interface_game_carrier_1_1_services_1_1_i_service_client.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aaf6eb80e64419465d0a636f9c80e8969"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_game_carrier_1_1_services_1_1_i_service_client.html#aaf6eb80e64419465d0a636f9c80e8969">SetServiceLocation</a> (<a class="el" href="class_game_carrier_1_1_services_1_1_service_location.html">ServiceLocation</a> serviceLocation)</td></tr>
+<tr class="memdesc:aaf6eb80e64419465d0a636f9c80e8969"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure Client with location of Service  <a href="interface_game_carrier_1_1_services_1_1_i_service_client.html#aaf6eb80e64419465d0a636f9c80e8969">More...</a><br /></td></tr>
 <tr class="separator:aaf6eb80e64419465d0a636f9c80e8969"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d3ed8fa2a79e4d3f7a822b4d1459fa9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_game_carrier_1_1_services_1_1_i_service_client.html#a0d3ed8fa2a79e4d3f7a822b4d1459fa9">SetFacadeService</a> (<a class="el" href="interface_game_carrier_1_1_services_1_1_facade_1_1_i_facade_service.html">IFacadeService</a> facadeService)</td></tr>
+<tr class="memdesc:a0d3ed8fa2a79e4d3f7a822b4d1459fa9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure Client with <a class="el" href="namespace_game_carrier_1_1_services_1_1_facade.html">Facade</a> (proxy)  <a href="interface_game_carrier_1_1_services_1_1_i_service_client.html#a0d3ed8fa2a79e4d3f7a822b4d1459fa9">More...</a><br /></td></tr>
 <tr class="separator:a0d3ed8fa2a79e4d3f7a822b4d1459fa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a357663a4ffba82625173e443317219ca"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_game_carrier_1_1_services_1_1_i_service_client.html#a357663a4ffba82625173e443317219ca">Connect</a> ()</td></tr>
+<tr class="memdesc:a357663a4ffba82625173e443317219ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asynchronous method to establish connection to Service  <a href="interface_game_carrier_1_1_services_1_1_i_service_client.html#a357663a4ffba82625173e443317219ca">More...</a><br /></td></tr>
 <tr class="separator:a357663a4ffba82625173e443317219ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a8f6c04b3a68e58287845516686fb0d"><td class="memItemLeft" align="right" valign="top">Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_game_carrier_1_1_services_1_1_i_service_client.html#a4a8f6c04b3a68e58287845516686fb0d">Disconnect</a> ()</td></tr>
+<tr class="memdesc:a4a8f6c04b3a68e58287845516686fb0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asynchronous method to disconnect Client from Service  <a href="interface_game_carrier_1_1_services_1_1_i_service_client.html#a4a8f6c04b3a68e58287845516686fb0d">More...</a><br /></td></tr>
 <tr class="separator:a4a8f6c04b3a68e58287845516686fb0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:a250d6d35ad9afc4422840847d8b75ff5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_carrier_1_1_services_1_1_service_name.html">ServiceName</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_game_carrier_1_1_services_1_1_i_service_client.html#a250d6d35ad9afc4422840847d8b75ff5">ServiceName</a><code> [get]</code></td></tr>
+<tr class="memdesc:a250d6d35ad9afc4422840847d8b75ff5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Service Identity  <a href="interface_game_carrier_1_1_services_1_1_i_service_client.html#a250d6d35ad9afc4422840847d8b75ff5">More...</a><br /></td></tr>
 <tr class="separator:a250d6d35ad9afc4422840847d8b75ff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d43e349b3426884ba054e4acf2310af"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_game_carrier_1_1_services_1_1_i_service_client.html#a4d43e349b3426884ba054e4acf2310af">IsConnected</a><code> [get]</code></td></tr>
+<tr class="memdesc:a4d43e349b3426884ba054e4acf2310af"><td class="mdescLeft">&#160;</td><td class="mdescRight">True, if Client connected to Service  <a href="interface_game_carrier_1_1_services_1_1_i_service_client.html#a4d43e349b3426884ba054e4acf2310af">More...</a><br /></td></tr>
 <tr class="separator:a4d43e349b3426884ba054e4acf2310af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c53da6f4226d9b55e2c5990bd486406"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_game_carrier_1_1_services.html#a8c77e2f29015950dfea707009ddd0fa2">ServiceClientConnectionState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_game_carrier_1_1_services_1_1_i_service_client.html#a2c53da6f4226d9b55e2c5990bd486406">State</a><code> [get]</code></td></tr>
+<tr class="memdesc:a2c53da6f4226d9b55e2c5990bd486406"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detailed Client connection state  <a href="interface_game_carrier_1_1_services_1_1_i_service_client.html#a2c53da6f4226d9b55e2c5990bd486406">More...</a><br /></td></tr>
+<tr class="separator:a2c53da6f4226d9b55e2c5990bd486406"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="events" name="events"></a>
 Events</h2></td></tr>
 <tr class="memitem:a348d55e8b3ca8a24f6f2a50f703c712e"><td class="memItemLeft" align="right" valign="top">Action&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_game_carrier_1_1_services_1_1_i_service_client.html#a348d55e8b3ca8a24f6f2a50f703c712e">Connected</a></td></tr>
+<tr class="memdesc:a348d55e8b3ca8a24f6f2a50f703c712e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connected Event raised on successfull Client connect to Service  <a href="interface_game_carrier_1_1_services_1_1_i_service_client.html#a348d55e8b3ca8a24f6f2a50f703c712e">More...</a><br /></td></tr>
 <tr class="separator:a348d55e8b3ca8a24f6f2a50f703c712e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2580be3f68ebd87d1d70ab64085425c"><td class="memItemLeft" align="right" valign="top">Action&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_game_carrier_1_1_services_1_1_i_service_client.html#aa2580be3f68ebd87d1d70ab64085425c">ConnectError</a></td></tr>
+<tr class="memdesc:aa2580be3f68ebd87d1d70ab64085425c"><td class="mdescLeft">&#160;</td><td class="mdescRight">ConnectError Event raised on failed Client connect to Service  <a href="interface_game_carrier_1_1_services_1_1_i_service_client.html#aa2580be3f68ebd87d1d70ab64085425c">More...</a><br /></td></tr>
+<tr class="separator:aa2580be3f68ebd87d1d70ab64085425c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a151842ce94c41646173ce95c91852f80"><td class="memItemLeft" align="right" valign="top">Action&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_game_carrier_1_1_services_1_1_i_service_client.html#a151842ce94c41646173ce95c91852f80">Disconnected</a></td></tr>
+<tr class="memdesc:a151842ce94c41646173ce95c91852f80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disconnected Event raised after Client disconnected  <a href="interface_game_carrier_1_1_services_1_1_i_service_client.html#a151842ce94c41646173ce95c91852f80">More...</a><br /></td></tr>
 <tr class="separator:a151842ce94c41646173ce95c91852f80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >Interface of Service's Client </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a357663a4ffba82625173e443317219ca" name="a357663a4ffba82625173e443317219ca"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a357663a4ffba82625173e443317219ca">&#9670;&nbsp;</a></span>Connect()</h2>
 
@@ -115,6 +134,9 @@ Events</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Asynchronous method to establish connection to Service </p>
+<dl class="section return"><dt>Returns</dt><dd>Asynchronous Task which will complete on Connect/Connection Error</dd></dl>
 
 </div>
 </div>
@@ -132,6 +154,9 @@ Events</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Asynchronous method to disconnect Client from Service </p>
+<dl class="section return"><dt>Returns</dt><dd>Asynchronous Task which will complete on Disconnect</dd></dl>
 
 <p>Implemented in <a class="el" href="class_game_carrier_1_1_services_1_1_base_service_client.html#acb9a7624ed6f56e4707e55d80446cb41">GameCarrier.Services.BaseServiceClient</a>.</p>
 
@@ -153,6 +178,14 @@ Events</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Configure Client with <a class="el" href="namespace_game_carrier_1_1_services_1_1_facade.html">Facade</a> (proxy) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">facadeService</td><td><a class="el" href="namespace_game_carrier_1_1_services_1_1_facade.html">Facade</a> (proxy)</td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="aaf6eb80e64419465d0a636f9c80e8969" name="aaf6eb80e64419465d0a636f9c80e8969"></a>
@@ -170,6 +203,14 @@ Events</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Configure Client with location of Service </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">serviceLocation</td><td>location of Service</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -193,6 +234,8 @@ Events</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>True, if Client connected to Service </p>
 
 <p>Implemented in <a class="el" href="class_game_carrier_1_1_services_1_1_base_service_client.html#a7f815d7b3d3b935d1259acb0f02e2e8a">GameCarrier.Services.BaseServiceClient</a>.</p>
 
@@ -218,7 +261,35 @@ Events</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Service Identity </p>
+
 <p>Implemented in <a class="el" href="class_game_carrier_1_1_services_1_1_base_service_client.html#a27975ffbb87f60a9a13b790be6e156e2">GameCarrier.Services.BaseServiceClient</a>.</p>
+
+</div>
+</div>
+<a id="a2c53da6f4226d9b55e2c5990bd486406" name="a2c53da6f4226d9b55e2c5990bd486406"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c53da6f4226d9b55e2c5990bd486406">&#9670;&nbsp;</a></span>State</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_game_carrier_1_1_services.html#a8c77e2f29015950dfea707009ddd0fa2">ServiceClientConnectionState</a> GameCarrier.Services.IServiceClient.State</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Detailed Client connection state </p>
+
+<p>Implemented in <a class="el" href="class_game_carrier_1_1_services_1_1_base_service_client.html#ab5c27b4bc776f80a05bcf39495faae89">GameCarrier.Services.BaseServiceClient</a>.</p>
 
 </div>
 </div>
@@ -235,6 +306,24 @@ Events</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Connected Event raised on successfull Client connect to Service </p>
+
+</div>
+</div>
+<a id="aa2580be3f68ebd87d1d70ab64085425c" name="aa2580be3f68ebd87d1d70ab64085425c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2580be3f68ebd87d1d70ab64085425c">&#9670;&nbsp;</a></span>ConnectError</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Action GameCarrier.Services.IServiceClient.ConnectError</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ConnectError Event raised on failed Client connect to Service </p>
+
 </div>
 </div>
 <a id="a151842ce94c41646173ce95c91852f80" name="a151842ce94c41646173ce95c91852f80"></a>
@@ -248,6 +337,8 @@ Events</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Disconnected Event raised after Client disconnected </p>
 
 </div>
 </div>
