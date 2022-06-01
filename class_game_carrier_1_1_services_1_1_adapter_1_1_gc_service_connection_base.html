@@ -75,7 +75,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Base class for service connection (client session)  
+<p>Base class for service connection (client session). Create ServiceConnection class, and:  
  <a href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_connection_base.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
@@ -112,7 +112,19 @@ Events</h2></td></tr>
 <tr class="separator:a11c27fe22fc509a04ede4afb7c60e643"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Base class for service connection (client session) </p>
+<div class="textblock"><p >Base class for service connection (client session). Create ServiceConnection class, and: </p>
+<ul>
+<li>inherit from <a class="el" href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_connection_base.html" title="Base class for service connection (client session). Create ServiceConnection class,...">GcServiceConnectionBase</a></li>
+<li>return new instance of connection in GcServiceBase.OnConnect() method</li>
+<li>provide <a class="el" href="class_game_carrier_1_1_services_1_1_service_name.html" title="ServiceName structure describes Service identity as a combination of it&#39;s Name and Version">ServiceName</a> in .ctor</li>
+<li>register operation handlers for service by calling RegisterOperationHandler / RegisterOperationHandler&lt;T&gt;</li>
+<li>operation handler receive <a class="el" href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_connection_base_1_1_operation_context.html" title="Context of Service Operation (without argument)">OperationContext</a> parameter, and, optionally - argument<ul>
+<li>call context.SendResponse from handler - to send Response to Client</li>
+<li>call SendEvent - to send Event to Client immediatelly</li>
+<li>call context.SendEvent - to send Event to Client after Response was sent </li>
+</ul>
+</li>
+</ul>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a70d8b192eace4afbbbefe38539f505d4" name="a70d8b192eace4afbbbefe38539f505d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a70d8b192eace4afbbbefe38539f505d4">&#9670;&nbsp;</a></span>GcServiceConnectionBase()</h2>
@@ -263,7 +275,14 @@ Events</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Register handler for operation </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<pre class="fragment">RegisterOperationHandler("Commit", Commit);
+...
+
+private void Commit(OperationContext context)
+{
+    // ...
+}
+</pre> <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">operationName</td><td>name of operation</td></tr>
     <tr><td class="paramname">handler</td><td>operation handler</td></tr>
@@ -308,7 +327,16 @@ Events</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Register handler for operation (with argument) </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
+<pre class="fragment">RegisterOperationHandler&lt;FindRowRequest&gt;("FindRow", FindRow);
+...
+
+private void FindRow(OperationContext context, FindRowRequest request)
+{
+    string data = database.FindRow(request.RowId);
+
+    context.SendResponse(new FindRowResponse { RowId = request.RowId, Data = data ?? "" });
+}
+</pre> <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">R</td><td>Type of argument</td></tr>
   </table>
@@ -368,7 +396,8 @@ Events</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Send Event to Client immediately </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<pre class="fragment">private void RowChanged(RowChangedEvent args) =&gt; SendEvent("RowChanged", args);
+</pre> <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">eventName</td><td>name of event</td></tr>
     <tr><td class="paramname">arguments</td><td>event arguments</td></tr>

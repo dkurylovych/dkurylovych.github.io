@@ -75,16 +75,16 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Base class of Service  
+<p><b>Base class of Service</b> When develop new service - inherit your service class from <a class="el" href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_base.html" title="Base class of Service When develop new service - inherit your service class from GcServiceBase,...">GcServiceBase</a>, and:  
  <a href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_base.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ade362896330535d19ef3fc8adeb9ca24"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_base.html#ade362896330535d19ef3fc8adeb9ca24">OnStart</a> ()</td></tr>
-<tr class="memdesc:ade362896330535d19ef3fc8adeb9ca24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback method executed on Service start  <a href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_base.html#ade362896330535d19ef3fc8adeb9ca24">More...</a><br /></td></tr>
+<tr class="memdesc:ade362896330535d19ef3fc8adeb9ca24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback method executed on Service start. During Start phase following steps performed:  <a href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_base.html#ade362896330535d19ef3fc8adeb9ca24">More...</a><br /></td></tr>
 <tr class="separator:ade362896330535d19ef3fc8adeb9ca24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7b623f3cfd508ad45ba17285e634250"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_base.html#aa7b623f3cfd508ad45ba17285e634250">OnStop</a> ()</td></tr>
-<tr class="memdesc:aa7b623f3cfd508ad45ba17285e634250"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback method executed on Service stop  <a href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_base.html#aa7b623f3cfd508ad45ba17285e634250">More...</a><br /></td></tr>
+<tr class="memdesc:aa7b623f3cfd508ad45ba17285e634250"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback method executed on Service stop.  <a href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_base.html#aa7b623f3cfd508ad45ba17285e634250">More...</a><br /></td></tr>
 <tr class="separator:aa7b623f3cfd508ad45ba17285e634250"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b41e1ba9d7a3cd9c35997e62cffb4ed"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_base.html#a7b41e1ba9d7a3cd9c35997e62cffb4ed">OnShutdown</a> ()</td></tr>
 <tr class="memdesc:a7b41e1ba9d7a3cd9c35997e62cffb4ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback method executed on Service shutdown  <a href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_base.html#a7b41e1ba9d7a3cd9c35997e62cffb4ed">More...</a><br /></td></tr>
@@ -96,29 +96,34 @@ Protected Member Functions</h2></td></tr>
 <tr class="memdesc:aa669cb1092178f24dd56ef21c5074261"><td class="mdescLeft">&#160;</td><td class="mdescRight">.ctor should accept Service identity  <a href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_base.html#aa669cb1092178f24dd56ef21c5074261">More...</a><br /></td></tr>
 <tr class="separator:aa669cb1092178f24dd56ef21c5074261"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a212ac915b5e7d463321e0f2e40e98fc3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_base.html#a212ac915b5e7d463321e0f2e40e98fc3">ConfigureContainer</a> ()</td></tr>
-<tr class="memdesc:a212ac915b5e7d463321e0f2e40e98fc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure Container on Server  <a href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_base.html#a212ac915b5e7d463321e0f2e40e98fc3">More...</a><br /></td></tr>
 <tr class="separator:a212ac915b5e7d463321e0f2e40e98fc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a985bf4af6e404bfbc36b427d7eb93514"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_game_carrier_1_1_services_1_1_configuration_1_1_i_service_configuration.html">IServiceConfiguration</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_base.html#a985bf4af6e404bfbc36b427d7eb93514">GetApplicationConfiguration</a> ()</td></tr>
-<tr class="memdesc:a985bf4af6e404bfbc36b427d7eb93514"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get server-side application configuration (read from config.json)  <a href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_base.html#a985bf4af6e404bfbc36b427d7eb93514">More...</a><br /></td></tr>
+<tr class="memdesc:a985bf4af6e404bfbc36b427d7eb93514"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get Game Carrier application configuration (read from config.json)  <a href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_base.html#a985bf4af6e404bfbc36b427d7eb93514">More...</a><br /></td></tr>
 <tr class="separator:a985bf4af6e404bfbc36b427d7eb93514"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a655c175890fbb891d1f4dd2bf5a6ca12"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_game_carrier_1_1_services_1_1_configuration_1_1_i_service_configuration.html">IServiceConfiguration</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_base.html#a655c175890fbb891d1f4dd2bf5a6ca12">GetFileConfiguration</a> ()</td></tr>
-<tr class="memdesc:a655c175890fbb891d1f4dd2bf5a6ca12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get server-side configuration (read from config files)  <a href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_base.html#a655c175890fbb891d1f4dd2bf5a6ca12">More...</a><br /></td></tr>
-<tr class="separator:a655c175890fbb891d1f4dd2bf5a6ca12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc95e2573a3acf83185e25c315574379"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_game_carrier_1_1_services_1_1_configuration_1_1_i_service_configuration.html">IServiceConfiguration</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_base.html#abc95e2573a3acf83185e25c315574379">GetFrameworkConfiguration</a> ()</td></tr>
+<tr class="memdesc:abc95e2573a3acf83185e25c315574379"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get .NET application configuration (read from *.dll.config / appSettings.json file)  <a href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_base.html#abc95e2573a3acf83185e25c315574379">More...</a><br /></td></tr>
+<tr class="separator:abc95e2573a3acf83185e25c315574379"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40d7b9a70071c40cc11b6db0affce872"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_base.html#a40d7b9a70071c40cc11b6db0affce872">ConfigureService</a> ()</td></tr>
-<tr class="memdesc:a40d7b9a70071c40cc11b6db0affce872"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure Service on Start  <a href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_base.html#a40d7b9a70071c40cc11b6db0affce872">More...</a><br /></td></tr>
+<tr class="memdesc:a40d7b9a70071c40cc11b6db0affce872"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure Service on Start. Developer can read additional settings from Service configuration, obtained by:  <a href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_base.html#a40d7b9a70071c40cc11b6db0affce872">More...</a><br /></td></tr>
 <tr class="separator:a40d7b9a70071c40cc11b6db0affce872"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:ab26acdcd7dbaa5a5d2d213169d38da23"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_carrier_1_1_services_1_1_service_name.html">ServiceName</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_base.html#ab26acdcd7dbaa5a5d2d213169d38da23">ServiceName</a><code> [get]</code></td></tr>
-<tr class="memdesc:ab26acdcd7dbaa5a5d2d213169d38da23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Service identity  <a href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_base.html#ab26acdcd7dbaa5a5d2d213169d38da23">More...</a><br /></td></tr>
+<tr class="memdesc:ab26acdcd7dbaa5a5d2d213169d38da23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Service identity - <a class="el" href="class_game_carrier_1_1_services_1_1_service_name.html" title="ServiceName structure describes Service identity as a combination of it&#39;s Name and Version">ServiceName</a>, provided in .ctor  <a href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_base.html#ab26acdcd7dbaa5a5d2d213169d38da23">More...</a><br /></td></tr>
 <tr class="separator:ab26acdcd7dbaa5a5d2d213169d38da23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea31551c0318ee07766a90d141c813c6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_carrier_1_1_services_1_1_service_location.html">ServiceLocation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_base.html#aea31551c0318ee07766a90d141c813c6">ServiceLocation</a><code> [get]</code></td></tr>
-<tr class="memdesc:aea31551c0318ee07766a90d141c813c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Service location  <a href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_base.html#aea31551c0318ee07766a90d141c813c6">More...</a><br /></td></tr>
+<tr class="memdesc:aea31551c0318ee07766a90d141c813c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Service location - Public Service endpoint, configured in Game Carrier confg.json file  <a href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_base.html#aea31551c0318ee07766a90d141c813c6">More...</a><br /></td></tr>
 <tr class="separator:aea31551c0318ee07766a90d141c813c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Base class of Service </p>
+<div class="textblock"><p ><b>Base class of Service</b> When develop new service - inherit your service class from <a class="el" href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_base.html" title="Base class of Service When develop new service - inherit your service class from GcServiceBase,...">GcServiceBase</a>, and: </p>
+<ul>
+<li>provide <a class="el" href="class_game_carrier_1_1_services_1_1_service_name.html" title="ServiceName structure describes Service identity as a combination of it&#39;s Name and Version">ServiceName</a> in constructor</li>
+<li>create class for service connection</li>
+<li>override OnConnect method and return new instance of connection</li>
+<li>override ConfigureContainer method to initialize service interface client </li>
+</ul>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa669cb1092178f24dd56ef21c5074261" name="aa669cb1092178f24dd56ef21c5074261"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa669cb1092178f24dd56ef21c5074261">&#9670;&nbsp;</a></span>GcServiceBase()</h2>
@@ -177,9 +182,12 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Configure Container on Server </p>
-
+<p >Configure Container on Server. You can configure, for example, logger in this method: </p><pre class="fragment">protected override void ConfigureContainer()
+{
+    base.ConfigureContainer();
+    GcServicesModule.ModuleFactory += @for&lt;LoggerBase&gt;() * @delegate(name =&gt; new Common.Log4net.Log4netLogger(name));
+}
+</pre> 
 </div>
 </div>
 <a id="a40d7b9a70071c40cc11b6db0affce872" name="a40d7b9a70071c40cc11b6db0affce872"></a>
@@ -205,7 +213,11 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Configure Service on Start </p>
+<p>Configure Service on Start. Developer can read additional settings from Service configuration, obtained by: </p>
+<ul>
+<li><a class="el" href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_base.html#a985bf4af6e404bfbc36b427d7eb93514" title="Get Game Carrier application configuration (read from config.json)">GetApplicationConfiguration()</a> method - read application settings from Game Carrier config.json file</li>
+<li><a class="el" href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_base.html#abc95e2573a3acf83185e25c315574379" title="Get .NET application configuration (read from *.dll.config / appSettings.json file)">GetFrameworkConfiguration()</a> method - read application settings from .NET config file </li>
+</ul>
 
 </div>
 </div>
@@ -232,13 +244,13 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get server-side application configuration (read from config.json) </p>
-<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+<p>Get Game Carrier application configuration (read from config.json) </p>
+<dl class="section return"><dt>Returns</dt><dd>IServiceConfiguration implementation</dd></dl>
 
 </div>
 </div>
-<a id="a655c175890fbb891d1f4dd2bf5a6ca12" name="a655c175890fbb891d1f4dd2bf5a6ca12"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a655c175890fbb891d1f4dd2bf5a6ca12">&#9670;&nbsp;</a></span>GetFileConfiguration()</h2>
+<a id="abc95e2573a3acf83185e25c315574379" name="abc95e2573a3acf83185e25c315574379"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc95e2573a3acf83185e25c315574379">&#9670;&nbsp;</a></span>GetFrameworkConfiguration()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -247,7 +259,7 @@ Properties</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="interface_game_carrier_1_1_services_1_1_configuration_1_1_i_service_configuration.html">IServiceConfiguration</a> GameCarrier.Services.Adapter.GcServiceBase.GetFileConfiguration </td>
+          <td class="memname"><a class="el" href="interface_game_carrier_1_1_services_1_1_configuration_1_1_i_service_configuration.html">IServiceConfiguration</a> GameCarrier.Services.Adapter.GcServiceBase.GetFrameworkConfiguration </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -260,8 +272,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get server-side configuration (read from config files) </p>
-<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+<p>Get .NET application configuration (read from *.dll.config / appSettings.json file) </p>
+<dl class="section return"><dt>Returns</dt><dd>IServiceConfiguration implementation</dd></dl>
 
 </div>
 </div>
@@ -299,8 +311,20 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Callback method executed on Service start </p>
-
+<p>Callback method executed on Service start. During Start phase following steps performed: </p>
+<ul>
+<li>ConfigureContrainer()</li>
+<li><a class="el" href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_base.html#a40d7b9a70071c40cc11b6db0affce872" title="Configure Service on Start. Developer can read additional settings from Service configuration,...">ConfigureService()</a></li>
+<li>Connect to <a class="el" href="namespace_game_carrier_1_1_services_1_1_discovery.html">Discovery</a> Service</li>
+<li>Promote Public Endpoint of service to <a class="el" href="namespace_game_carrier_1_1_services_1_1_discovery.html">Discovery</a> Service</li>
+<li>Service becomes available for <a class="el" href="namespace_game_carrier_1_1_clients.html">Clients</a> over Public Endpoint</li>
+</ul>
+<p >Developer should configure public_endpoint in <a class="el" href="namespace_game_carrier.html">GameCarrier</a>'s config.json file (for application): </p><pre class="fragment">"name": "Persistence",
+"type_name": "GameCarrier.Persistence.Service.PersistenceService",
+"file_name": "%SOURCE_DN%/managed/NetServices/GC.Services.TestApp/bin/%BUILD_TYPE%/%PLATFORM%/GC.Persistence.Service.dll",
+"public_endpoint": "wss://localhost:7681/Persistence",
+"discovery_endpoint": "wss://localhost:7700/Discovery"
+</pre> 
 </div>
 </div>
 <a id="aa7b623f3cfd508ad45ba17285e634250" name="aa7b623f3cfd508ad45ba17285e634250"></a>
@@ -318,7 +342,11 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Callback method executed on Service stop </p>
+<p>Callback method executed on Service stop. </p>
+<ul>
+<li><a class="el" href="class_game_carrier_1_1_services_1_1_service_factory.html#a07b2aecc1c6669bd0e50f70239ebbb10" title="Dispose Factory - disconnect from Discovery Service">ServiceFactory.Dispose()</a> is executed here, causing disconnect from <a class="el" href="namespace_game_carrier_1_1_services_1_1_discovery.html">Discovery</a> Service.</li>
+<li>Disconnect from discovery Service means that <a class="el" href="namespace_game_carrier_1_1_clients.html">Clients</a> will not be able to discover/connect to Service </li>
+</ul>
 
 </div>
 </div>
@@ -343,8 +371,9 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Service location </p>
-
+<p>Service location - Public Service endpoint, configured in Game Carrier confg.json file </p>
+<pre class="fragment">"public_endpoint": "wss://localhost:7681/Persistence"
+</pre> 
 </div>
 </div>
 <a id="ab26acdcd7dbaa5a5d2d213169d38da23" name="ab26acdcd7dbaa5a5d2d213169d38da23"></a>
@@ -367,7 +396,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Service identity </p>
+<p>Service identity - <a class="el" href="class_game_carrier_1_1_services_1_1_service_name.html" title="ServiceName structure describes Service identity as a combination of it&#39;s Name and Version">ServiceName</a>, provided in .ctor </p>
 
 </div>
 </div>

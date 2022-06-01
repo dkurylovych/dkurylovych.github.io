@@ -112,7 +112,9 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Initiate asynchronous request, and expect Response </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
+<pre class="fragment">public Task&lt;FindRowResponse&gt; FindRow(FindRowRequest request) =&gt;
+    CreateRequest("FindRow", request).ExpectResponse&lt;FindRowResponse&gt;();
+</pre> <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">R</td><td>Type of Response message</td></tr>
   </table>

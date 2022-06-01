@@ -77,7 +77,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Base class for Service Client  
+<p>Base class for Service Client. Create Service Client class, and:  
  <a href="class_game_carrier_1_1_services_1_1_base_service_client.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
@@ -94,9 +94,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a386f8968cfecd500bba9f2d9b8662641"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_carrier_1_1_services_1_1_base_service_client.html#a386f8968cfecd500bba9f2d9b8662641">Dispose</a> ()</td></tr>
 <tr class="memdesc:a386f8968cfecd500bba9f2d9b8662641"><td class="mdescLeft">&#160;</td><td class="mdescRight">Client dispose logic (disconnect from Service)  <a href="class_game_carrier_1_1_services_1_1_base_service_client.html#a386f8968cfecd500bba9f2d9b8662641">More...</a><br /></td></tr>
 <tr class="separator:a386f8968cfecd500bba9f2d9b8662641"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb9a7624ed6f56e4707e55d80446cb41"><td class="memItemLeft" align="right" valign="top">async Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_carrier_1_1_services_1_1_base_service_client.html#acb9a7624ed6f56e4707e55d80446cb41">Disconnect</a> ()</td></tr>
-<tr class="memdesc:acb9a7624ed6f56e4707e55d80446cb41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asynchronous method to disconnect Client from Service  <a href="class_game_carrier_1_1_services_1_1_base_service_client.html#acb9a7624ed6f56e4707e55d80446cb41">More...</a><br /></td></tr>
-<tr class="separator:acb9a7624ed6f56e4707e55d80446cb41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf6eb80e64419465d0a636f9c80e8969"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_game_carrier_1_1_services_1_1_i_service_client.html#aaf6eb80e64419465d0a636f9c80e8969">SetServiceLocation</a> (<a class="el" href="class_game_carrier_1_1_services_1_1_service_location.html">ServiceLocation</a> serviceLocation)</td></tr>
 <tr class="memdesc:aaf6eb80e64419465d0a636f9c80e8969"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure Client with location of Service  <a href="interface_game_carrier_1_1_services_1_1_i_service_client.html#aaf6eb80e64419465d0a636f9c80e8969">More...</a><br /></td></tr>
 <tr class="separator:aaf6eb80e64419465d0a636f9c80e8969"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -119,7 +116,7 @@ Protected Member Functions</h2></td></tr>
 <tr class="memdesc:a86f2b5c1c4eb329c32f8897c9a1a5865"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raise UnhandledError event  <a href="class_game_carrier_1_1_services_1_1_base_service_client.html#a86f2b5c1c4eb329c32f8897c9a1a5865">More...</a><br /></td></tr>
 <tr class="separator:a86f2b5c1c4eb329c32f8897c9a1a5865"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6743880bc8bc8291c4d4974bb83ff914"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_carrier_1_1_services_1_1_base_service_client_1_1_operation_request.html">OperationRequest</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_carrier_1_1_services_1_1_base_service_client.html#a6743880bc8bc8291c4d4974bb83ff914">CreateRequest</a> (string operationName, params IMessage[] messages)</td></tr>
-<tr class="memdesc:a6743880bc8bc8291c4d4974bb83ff914"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create Request for operation  <a href="class_game_carrier_1_1_services_1_1_base_service_client.html#a6743880bc8bc8291c4d4974bb83ff914">More...</a><br /></td></tr>
+<tr class="memdesc:a6743880bc8bc8291c4d4974bb83ff914"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create Request for operation.  <a href="class_game_carrier_1_1_services_1_1_base_service_client.html#a6743880bc8bc8291c4d4974bb83ff914">More...</a><br /></td></tr>
 <tr class="separator:a6743880bc8bc8291c4d4974bb83ff914"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94e800d59a7f2a0be68ee2dbe96db142"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_carrier_1_1_services_1_1_base_service_client.html#a94e800d59a7f2a0be68ee2dbe96db142">RegisterEventHandler</a> (string eventName, Action&lt; <a class="el" href="class_game_carrier_1_1_services_1_1_base_service_client_1_1_event_context.html">EventContext</a> &gt; handler)</td></tr>
 <tr class="memdesc:a94e800d59a7f2a0be68ee2dbe96db142"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register Event Handler for event by eventName (without argument)  <a href="class_game_carrier_1_1_services_1_1_base_service_client.html#a94e800d59a7f2a0be68ee2dbe96db142">More...</a><br /></td></tr>
@@ -134,16 +131,16 @@ Protected Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:a27975ffbb87f60a9a13b790be6e156e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_carrier_1_1_services_1_1_service_name.html">ServiceName</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_carrier_1_1_services_1_1_base_service_client.html#a27975ffbb87f60a9a13b790be6e156e2">ServiceName</a><code> [get]</code></td></tr>
-<tr class="memdesc:a27975ffbb87f60a9a13b790be6e156e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Service Identity  <a href="class_game_carrier_1_1_services_1_1_base_service_client.html#a27975ffbb87f60a9a13b790be6e156e2">More...</a><br /></td></tr>
+<tr class="memdesc:a27975ffbb87f60a9a13b790be6e156e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Service Identity, passed as .ctor parameter  <a href="class_game_carrier_1_1_services_1_1_base_service_client.html#a27975ffbb87f60a9a13b790be6e156e2">More...</a><br /></td></tr>
 <tr class="separator:a27975ffbb87f60a9a13b790be6e156e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16589bd0e84b1df914a51fbf82cd1901"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_carrier_1_1_services_1_1_base_service_client.html#a16589bd0e84b1df914a51fbf82cd1901">ConnectTimeout</a> = 10000<code> [get, set]</code></td></tr>
-<tr class="memdesc:a16589bd0e84b1df914a51fbf82cd1901"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timeout of asynchronous Connect operation  <a href="class_game_carrier_1_1_services_1_1_base_service_client.html#a16589bd0e84b1df914a51fbf82cd1901">More...</a><br /></td></tr>
+<tr class="memdesc:a16589bd0e84b1df914a51fbf82cd1901"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timeout of asynchronous Connect operation (in milliseconds)  <a href="class_game_carrier_1_1_services_1_1_base_service_client.html#a16589bd0e84b1df914a51fbf82cd1901">More...</a><br /></td></tr>
 <tr class="separator:a16589bd0e84b1df914a51fbf82cd1901"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0dd7969f9a7371d02964084f324b166d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_carrier_1_1_services_1_1_base_service_client.html#a0dd7969f9a7371d02964084f324b166d">DisconnectTimeout</a> = 10000<code> [get, set]</code></td></tr>
-<tr class="memdesc:a0dd7969f9a7371d02964084f324b166d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timeout of asynchronous Disconnect operation  <a href="class_game_carrier_1_1_services_1_1_base_service_client.html#a0dd7969f9a7371d02964084f324b166d">More...</a><br /></td></tr>
+<tr class="memdesc:a0dd7969f9a7371d02964084f324b166d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timeout of asynchronous Disconnect operation (in milliseconds)  <a href="class_game_carrier_1_1_services_1_1_base_service_client.html#a0dd7969f9a7371d02964084f324b166d">More...</a><br /></td></tr>
 <tr class="separator:a0dd7969f9a7371d02964084f324b166d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:affdd3b77e2672150135524b8a71087ec"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_carrier_1_1_services_1_1_base_service_client.html#affdd3b77e2672150135524b8a71087ec">OperationTimeout</a> = 10000<code> [get, set]</code></td></tr>
-<tr class="memdesc:affdd3b77e2672150135524b8a71087ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timeout of asynchronous operation with Server  <a href="class_game_carrier_1_1_services_1_1_base_service_client.html#affdd3b77e2672150135524b8a71087ec">More...</a><br /></td></tr>
+<tr class="memdesc:affdd3b77e2672150135524b8a71087ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timeout of asynchronous operation with Server (in milliseconds)  <a href="class_game_carrier_1_1_services_1_1_base_service_client.html#affdd3b77e2672150135524b8a71087ec">More...</a><br /></td></tr>
 <tr class="separator:affdd3b77e2672150135524b8a71087ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f815d7b3d3b935d1259acb0f02e2e8a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_carrier_1_1_services_1_1_base_service_client.html#a7f815d7b3d3b935d1259acb0f02e2e8a">IsConnected</a><code> [get]</code></td></tr>
 <tr class="memdesc:a7f815d7b3d3b935d1259acb0f02e2e8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">True, if Client connected to Service  <a href="class_game_carrier_1_1_services_1_1_base_service_client.html#a7f815d7b3d3b935d1259acb0f02e2e8a">More...</a><br /></td></tr>
@@ -188,7 +185,18 @@ Events</h2></td></tr>
 <tr class="separator:a151842ce94c41646173ce95c91852f80 inherit events_interface_game_carrier_1_1_services_1_1_i_service_client"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Base class for Service Client </p>
+<div class="textblock"><p >Base class for Service Client. Create Service Client class, and: </p>
+<ul>
+<li>inherit from <a class="el" href="class_game_carrier_1_1_services_1_1_base_service_client.html" title="Base class for Service Client. Create Service Client class, and:">BaseServiceClient</a></li>
+<li>implement Service Interface</li>
+<li>pass <a class="el" href="class_game_carrier_1_1_services_1_1_service_name.html" title="ServiceName structure describes Service identity as a combination of it&#39;s Name and Version">ServiceName</a> in .ctor</li>
+<li>register event handlers in .ctor by calling RegisterEventHandler / RegisterEventHandler&lt;T&gt;</li>
+<li>implement Client Interface methods in Async style<ul>
+<li>Request-Response style methods implemented by chaining calls CreateRequest(...) + ExpectResponse&lt;T&gt;()</li>
+<li>one-way Event style method implemented by calling <a class="el" href="class_game_carrier_1_1_services_1_1_base_service_client.html#a1159de924269b52cf17b7b41e635f129" title="Send Event from Client to Server">SendEvent()</a> </li>
+</ul>
+</li>
+</ul>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a004a34d6c47cd4fb7a64ecf277f813d4" name="a004a34d6c47cd4fb7a64ecf277f813d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a004a34d6c47cd4fb7a64ecf277f813d4">&#9670;&nbsp;</a></span>BaseServiceClient()</h2>
@@ -259,37 +267,23 @@ Events</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Create Request for operation </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Create Request for operation. </p>
+<ul>
+<li>pass operationName and argement as parameters</li>
+<li>chain method with call to ExpectResponse&lt;T&gt;</li>
+<li><p class="startli">actual call to server is performed from ExpectResponse call</p>
+<p class="startli">public Task&lt;FindRowResponse&gt; FindRow(FindRowRequest request) =&gt; CreateRequest("FindRow", request).ExpectResponse&lt;FindRowResponse&gt;();</p>
+</li>
+</ul>
+<p >Await Response on Client in .NET async manner: </p><pre class="fragment">var findResponse = await persistenceService.FindRow(new FindRowRequest { RowId = 1 });
+</pre> <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">operationName</td><td>Name of Service operation</td></tr>
     <tr><td class="paramname">messages</td><td>arguments of operation</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd></dd></dl>
-
-</div>
-</div>
-<a id="acb9a7624ed6f56e4707e55d80446cb41" name="acb9a7624ed6f56e4707e55d80446cb41"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acb9a7624ed6f56e4707e55d80446cb41">&#9670;&nbsp;</a></span>Disconnect()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">async Task GameCarrier.Services.BaseServiceClient.Disconnect </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Asynchronous method to disconnect Client from Service </p>
-<dl class="section return"><dt>Returns</dt><dd>Asynchronous Task which will complete on Disconnect</dd></dl>
-
-<p>Implements <a class="el" href="interface_game_carrier_1_1_services_1_1_i_service_client.html#a4a8f6c04b3a68e58287845516686fb0d">GameCarrier.Services.IServiceClient</a>.</p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_game_carrier_1_1_services_1_1_base_service_client_1_1_operation_request.html" title="OperationRequest class represents Request from Client to Service">OperationRequest</a> instance</dd></dl>
 
 </div>
 </div>
@@ -381,6 +375,11 @@ Events</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Register Event Handler for event by eventName (without argument) </p>
+<ul>
+<li><p class="startli">Perform registration of event handlers in .ctor</p>
+<p class="startli">RegisterEventHandler("Deadlocked", (context) =&gt; { });</p>
+</li>
+</ul>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">eventName</td><td>Name of event</td></tr>
@@ -426,6 +425,11 @@ Events</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Register Event Handler for event by eventName (with argument) </p>
+<ul>
+<li><p class="startli">Perform registration of event handlers in .ctor</p>
+<p class="startli">RegisterEventHandler&lt;RowChangedEvent&gt;("RowChanged", (context, argument) =&gt; RowChanged?.Invoke(this, argument));</p>
+</li>
+</ul>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">R</td><td>Type of event Argument</td></tr>
@@ -486,7 +490,8 @@ Events</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Send Event from Client to Server </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<pre class="fragment">public void Commit() =&gt; SendEvent("Commit");
+</pre> <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">eventName</td><td>Name of event</td></tr>
     <tr><td class="paramname">arguments</td><td>arguments</td></tr>
@@ -517,7 +522,7 @@ Events</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Timeout of asynchronous Connect operation </p>
+<p>Timeout of asynchronous Connect operation (in milliseconds) </p>
 
 </div>
 </div>
@@ -541,7 +546,7 @@ Events</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Timeout of asynchronous Disconnect operation </p>
+<p>Timeout of asynchronous Disconnect operation (in milliseconds) </p>
 
 </div>
 </div>
@@ -591,7 +596,7 @@ Events</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Timeout of asynchronous operation with Server </p>
+<p>Timeout of asynchronous operation with Server (in milliseconds) </p>
 
 </div>
 </div>
@@ -615,7 +620,7 @@ Events</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Service Identity </p>
+<p>Service Identity, passed as .ctor parameter </p>
 
 <p>Implements <a class="el" href="interface_game_carrier_1_1_services_1_1_i_service_client.html#a250d6d35ad9afc4422840847d8b75ff5">GameCarrier.Services.IServiceClient</a>.</p>
 

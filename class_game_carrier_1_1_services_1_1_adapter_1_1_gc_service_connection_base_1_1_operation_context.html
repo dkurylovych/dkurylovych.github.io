@@ -129,7 +129,8 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Send Event to Client after current operation completed </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<pre class="fragment">context.SendEvent("RowChanged", new RowChangedEvent { RowId = request.RowId, OldData = oldData ?? "", NewData = request.Data });
+</pre> <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">eventName</td><td></td></tr>
     <tr><td class="paramname">messages</td><td></td></tr>
@@ -156,7 +157,13 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Send Response to Client for current operation </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<pre class="fragment">private void FindRow(OperationContext context, FindRowRequest request)
+{
+    string data = database.FindRow(request.RowId);
+
+    context.SendResponse(new FindRowResponse { RowId = request.RowId, Data = data ?? "" });
+}
+</pre> <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">parameters</td><td>parameters of response</td></tr>
   </table>
