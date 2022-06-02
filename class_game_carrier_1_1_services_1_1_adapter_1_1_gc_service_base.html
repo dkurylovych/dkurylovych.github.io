@@ -89,6 +89,19 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7b41e1ba9d7a3cd9c35997e62cffb4ed"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_base.html#a7b41e1ba9d7a3cd9c35997e62cffb4ed">OnShutdown</a> ()</td></tr>
 <tr class="memdesc:a7b41e1ba9d7a3cd9c35997e62cffb4ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback method executed on Service shutdown  <a href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_base.html#a7b41e1ba9d7a3cd9c35997e62cffb4ed">More...</a><br /></td></tr>
 <tr class="separator:a7b41e1ba9d7a3cd9c35997e62cffb4ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_game_carrier_1_1_adapter_1_1_gc_application_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_game_carrier_1_1_adapter_1_1_gc_application_base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_game_carrier_1_1_adapter_1_1_gc_application_base.html">GameCarrier.Adapter.GcApplicationBase</a></td></tr>
+<tr class="memitem:a8dd57fdb23fe9c687e01d76be6736448 inherit pub_methods_class_game_carrier_1_1_adapter_1_1_gc_application_base"><td class="memItemLeft" align="right" valign="top">abstract void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_carrier_1_1_adapter_1_1_gc_application_base.html#a8dd57fdb23fe9c687e01d76be6736448">OnStart</a> ()</td></tr>
+<tr class="memdesc:a8dd57fdb23fe9c687e01d76be6736448 inherit pub_methods_class_game_carrier_1_1_adapter_1_1_gc_application_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback method, called on application start. Initialize application in this callback, start timers, etc...  <a href="class_game_carrier_1_1_adapter_1_1_gc_application_base.html#a8dd57fdb23fe9c687e01d76be6736448">More...</a><br /></td></tr>
+<tr class="separator:a8dd57fdb23fe9c687e01d76be6736448 inherit pub_methods_class_game_carrier_1_1_adapter_1_1_gc_application_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab76e6c77472e2d30510b94e99f3c9c49 inherit pub_methods_class_game_carrier_1_1_adapter_1_1_gc_application_base"><td class="memItemLeft" align="right" valign="top">abstract <a class="el" href="class_game_carrier_1_1_adapter_1_1_gc_connection_base.html">GcConnectionBase</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_carrier_1_1_adapter_1_1_gc_application_base.html#ab76e6c77472e2d30510b94e99f3c9c49">OnConnect</a> (IntPtr connenctionHandle, <a class="el" href="class_game_carrier_1_1_adapter_1_1_connection_info.html">ConnectionInfo</a> info)</td></tr>
+<tr class="memdesc:ab76e6c77472e2d30510b94e99f3c9c49 inherit pub_methods_class_game_carrier_1_1_adapter_1_1_gc_application_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback method, called for every incoming connection. Callback should instantiate and return <a class="el" href="class_game_carrier_1_1_adapter_1_1_gc_connection_base.html" title="Base class for incomming connection on server. Create instance of GcConnectionBase in response to GcA...">GcConnectionBase</a> - which will process messages for this connection.  <a href="class_game_carrier_1_1_adapter_1_1_gc_application_base.html#ab76e6c77472e2d30510b94e99f3c9c49">More...</a><br /></td></tr>
+<tr class="separator:ab76e6c77472e2d30510b94e99f3c9c49 inherit pub_methods_class_game_carrier_1_1_adapter_1_1_gc_application_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12966c0083938c6e064b216cd459ee59 inherit pub_methods_class_game_carrier_1_1_adapter_1_1_gc_application_base"><td class="memItemLeft" align="right" valign="top">abstract void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_carrier_1_1_adapter_1_1_gc_application_base.html#a12966c0083938c6e064b216cd459ee59">OnStop</a> ()</td></tr>
+<tr class="memdesc:a12966c0083938c6e064b216cd459ee59 inherit pub_methods_class_game_carrier_1_1_adapter_1_1_gc_application_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Phase 1 of termination process. It is possible to send messages at this point. Disconnect S2S connections here.  <a href="class_game_carrier_1_1_adapter_1_1_gc_application_base.html#a12966c0083938c6e064b216cd459ee59">More...</a><br /></td></tr>
+<tr class="separator:a12966c0083938c6e064b216cd459ee59 inherit pub_methods_class_game_carrier_1_1_adapter_1_1_gc_application_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ed1b1c89f365d829751a92197231aad inherit pub_methods_class_game_carrier_1_1_adapter_1_1_gc_application_base"><td class="memItemLeft" align="right" valign="top">abstract void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_carrier_1_1_adapter_1_1_gc_application_base.html#a1ed1b1c89f365d829751a92197231aad">OnShutdown</a> ()</td></tr>
+<tr class="memdesc:a1ed1b1c89f365d829751a92197231aad inherit pub_methods_class_game_carrier_1_1_adapter_1_1_gc_application_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Phase 2 of termination process. Dispose resources here. Occured after all applications on current server stopped.  <a href="class_game_carrier_1_1_adapter_1_1_gc_application_base.html#a1ed1b1c89f365d829751a92197231aad">More...</a><br /></td></tr>
+<tr class="separator:a1ed1b1c89f365d829751a92197231aad inherit pub_methods_class_game_carrier_1_1_adapter_1_1_gc_application_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -115,6 +128,25 @@ Properties</h2></td></tr>
 <tr class="memitem:aea31551c0318ee07766a90d141c813c6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_carrier_1_1_services_1_1_service_location.html">ServiceLocation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_base.html#aea31551c0318ee07766a90d141c813c6">ServiceLocation</a><code> [get]</code></td></tr>
 <tr class="memdesc:aea31551c0318ee07766a90d141c813c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Service location - Public Service endpoint, configured in Game Carrier confg.json file  <a href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_base.html#aea31551c0318ee07766a90d141c813c6">More...</a><br /></td></tr>
 <tr class="separator:aea31551c0318ee07766a90d141c813c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header properties_class_game_carrier_1_1_adapter_1_1_gc_application_base"><td colspan="2" onclick="javascript:toggleInherit('properties_class_game_carrier_1_1_adapter_1_1_gc_application_base')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="class_game_carrier_1_1_adapter_1_1_gc_application_base.html">GameCarrier.Adapter.GcApplicationBase</a></td></tr>
+<tr class="memitem:a076ebab88766bfa22fc10d4a9e4be9cd inherit properties_class_game_carrier_1_1_adapter_1_1_gc_application_base"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_carrier_1_1_adapter_1_1_gc_application_base.html#a076ebab88766bfa22fc10d4a9e4be9cd">ApplicationId</a><code> [get]</code></td></tr>
+<tr class="memdesc:a076ebab88766bfa22fc10d4a9e4be9cd inherit properties_class_game_carrier_1_1_adapter_1_1_gc_application_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Id of application (index of application within "apps" section in config.json file)  <a href="class_game_carrier_1_1_adapter_1_1_gc_application_base.html#a076ebab88766bfa22fc10d4a9e4be9cd">More...</a><br /></td></tr>
+<tr class="separator:a076ebab88766bfa22fc10d4a9e4be9cd inherit properties_class_game_carrier_1_1_adapter_1_1_gc_application_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a529b0406548cd03dbad9294f39bda0 inherit properties_class_game_carrier_1_1_adapter_1_1_gc_application_base"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_carrier_1_1_adapter_1_1_gc_application_base.html#a1a529b0406548cd03dbad9294f39bda0">ApplicationName</a><code> [get]</code></td></tr>
+<tr class="memdesc:a1a529b0406548cd03dbad9294f39bda0 inherit properties_class_game_carrier_1_1_adapter_1_1_gc_application_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of application ("name" attribute of application section in config.json file)  <a href="class_game_carrier_1_1_adapter_1_1_gc_application_base.html#a1a529b0406548cd03dbad9294f39bda0">More...</a><br /></td></tr>
+<tr class="separator:a1a529b0406548cd03dbad9294f39bda0 inherit properties_class_game_carrier_1_1_adapter_1_1_gc_application_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef08d48fc97769a0b9ac9e9d5632a9f4 inherit properties_class_game_carrier_1_1_adapter_1_1_gc_application_base"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_carrier_1_1_adapter_1_1_gc_application_base.html#aef08d48fc97769a0b9ac9e9d5632a9f4">ApplicationRootPath</a><code> [get]</code></td></tr>
+<tr class="memdesc:aef08d48fc97769a0b9ac9e9d5632a9f4 inherit properties_class_game_carrier_1_1_adapter_1_1_gc_application_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Root directory of Game Carrier server ("adapters.dir" attribute of config.json file)  <a href="class_game_carrier_1_1_adapter_1_1_gc_application_base.html#aef08d48fc97769a0b9ac9e9d5632a9f4">More...</a><br /></td></tr>
+<tr class="separator:aef08d48fc97769a0b9ac9e9d5632a9f4 inherit properties_class_game_carrier_1_1_adapter_1_1_gc_application_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67d749cce2129322a68e09db7589d48d inherit properties_class_game_carrier_1_1_adapter_1_1_gc_application_base"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_carrier_1_1_adapter_1_1_gc_application_base.html#a67d749cce2129322a68e09db7589d48d">ApplicationPath</a><code> [get]</code></td></tr>
+<tr class="memdesc:a67d749cce2129322a68e09db7589d48d inherit properties_class_game_carrier_1_1_adapter_1_1_gc_application_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Directory of application's assembly (directory path of "file_name" attribute of application section in config.json file)  <a href="class_game_carrier_1_1_adapter_1_1_gc_application_base.html#a67d749cce2129322a68e09db7589d48d">More...</a><br /></td></tr>
+<tr class="separator:a67d749cce2129322a68e09db7589d48d inherit properties_class_game_carrier_1_1_adapter_1_1_gc_application_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a106e35ad8d73fafcbf2c23bf2123a9e2 inherit properties_class_game_carrier_1_1_adapter_1_1_gc_application_base"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_carrier_1_1_adapter_1_1_gc_application_base.html#a106e35ad8d73fafcbf2c23bf2123a9e2">ApplicationBinaryPath</a><code> [get]</code></td></tr>
+<tr class="memdesc:a106e35ad8d73fafcbf2c23bf2123a9e2 inherit properties_class_game_carrier_1_1_adapter_1_1_gc_application_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Application's assembly ("file_name" attribute of application section in config.json file)  <a href="class_game_carrier_1_1_adapter_1_1_gc_application_base.html#a106e35ad8d73fafcbf2c23bf2123a9e2">More...</a><br /></td></tr>
+<tr class="separator:a106e35ad8d73fafcbf2c23bf2123a9e2 inherit properties_class_game_carrier_1_1_adapter_1_1_gc_application_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5603c015b122d50fb392db1a0318a5fb inherit properties_class_game_carrier_1_1_adapter_1_1_gc_application_base"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_carrier_1_1_adapter_1_1_gc_application_base.html#a5603c015b122d50fb392db1a0318a5fb">ApplicationConfigurationPath</a><code> [get]</code></td></tr>
+<tr class="memdesc:a5603c015b122d50fb392db1a0318a5fb inherit properties_class_game_carrier_1_1_adapter_1_1_gc_application_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assembly configuration file  <a href="class_game_carrier_1_1_adapter_1_1_gc_application_base.html#a5603c015b122d50fb392db1a0318a5fb">More...</a><br /></td></tr>
+<tr class="separator:a5603c015b122d50fb392db1a0318a5fb inherit properties_class_game_carrier_1_1_adapter_1_1_gc_application_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p ><b>Base class of Service</b> When develop new service - inherit your service class from <a class="el" href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_base.html" title="Base class of Service When develop new service - inherit your service class from GcServiceBase,...">GcServiceBase</a>, and: </p>
@@ -282,6 +314,9 @@ Properties</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">override void GameCarrier.Services.Adapter.GcServiceBase.OnShutdown </td>
@@ -290,9 +325,16 @@ Properties</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Callback method executed on Service shutdown </p>
+
+<p>Implements <a class="el" href="class_game_carrier_1_1_adapter_1_1_gc_application_base.html#a1ed1b1c89f365d829751a92197231aad">GameCarrier.Adapter.GcApplicationBase</a>.</p>
 
 </div>
 </div>
@@ -301,6 +343,9 @@ Properties</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">override void GameCarrier.Services.Adapter.GcServiceBase.OnStart </td>
@@ -309,14 +354,19 @@ Properties</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Callback method executed on Service start. During Start phase following steps performed: </p>
 <ul>
 <li>ConfigureContrainer()</li>
 <li><a class="el" href="class_game_carrier_1_1_services_1_1_adapter_1_1_gc_service_base.html#a40d7b9a70071c40cc11b6db0affce872" title="Configure Service on Start. Developer can read additional settings from Service configuration,...">ConfigureService()</a></li>
-<li>Connect to <a class="el" href="namespace_game_carrier_1_1_services_1_1_discovery.html">Discovery</a> Service</li>
-<li>Promote Public Endpoint of service to <a class="el" href="namespace_game_carrier_1_1_services_1_1_discovery.html">Discovery</a> Service</li>
+<li>Connect to Discovery Service</li>
+<li>Promote Public Endpoint of service to Discovery Service</li>
 <li>Service becomes available for <a class="el" href="namespace_game_carrier_1_1_clients.html">Clients</a> over Public Endpoint</li>
 </ul>
 <p >Developer should configure public_endpoint in <a class="el" href="namespace_game_carrier.html">GameCarrier</a>'s config.json file (for application): </p><pre class="fragment">"name": "Persistence",
@@ -325,6 +375,8 @@ Properties</h2></td></tr>
 "public_endpoint": "wss://localhost:7681/Persistence",
 "discovery_endpoint": "wss://localhost:7700/Discovery"
 </pre> 
+<p>Implements <a class="el" href="class_game_carrier_1_1_adapter_1_1_gc_application_base.html#a8dd57fdb23fe9c687e01d76be6736448">GameCarrier.Adapter.GcApplicationBase</a>.</p>
+
 </div>
 </div>
 <a id="aa7b623f3cfd508ad45ba17285e634250" name="aa7b623f3cfd508ad45ba17285e634250"></a>
@@ -332,6 +384,9 @@ Properties</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">override void GameCarrier.Services.Adapter.GcServiceBase.OnStop </td>
@@ -340,13 +395,20 @@ Properties</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Callback method executed on Service stop. </p>
 <ul>
-<li><a class="el" href="class_game_carrier_1_1_services_1_1_service_factory.html#a07b2aecc1c6669bd0e50f70239ebbb10" title="Dispose Factory - disconnect from Discovery Service">ServiceFactory.Dispose()</a> is executed here, causing disconnect from <a class="el" href="namespace_game_carrier_1_1_services_1_1_discovery.html">Discovery</a> Service.</li>
+<li><a class="el" href="class_game_carrier_1_1_services_1_1_service_factory.html#a07b2aecc1c6669bd0e50f70239ebbb10" title="Dispose Factory - disconnect from Discovery Service">ServiceFactory.Dispose()</a> is executed here, causing disconnect from Discovery Service.</li>
 <li>Disconnect from discovery Service means that <a class="el" href="namespace_game_carrier_1_1_clients.html">Clients</a> will not be able to discover/connect to Service </li>
 </ul>
+
+<p>Implements <a class="el" href="class_game_carrier_1_1_adapter_1_1_gc_application_base.html#a12966c0083938c6e064b216cd459ee59">GameCarrier.Adapter.GcApplicationBase</a>.</p>
 
 </div>
 </div>

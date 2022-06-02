@@ -79,13 +79,16 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logger that logs to Game Carrier's client log file  <a href="class_game_carrier_1_1_clients_1_1_client_logger.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_carrier_1_1_clients_1_1_gc_client.html">GcClient</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Game Carrier Client implemented in Event-style manner  <a href="class_game_carrier_1_1_clients_1_1_gc_client.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_carrier_1_1_clients_1_1_gc_client_base.html">GcClientBase</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Game Carrier abstract client class. Intended to use as base class for client implementation  <a href="class_game_carrier_1_1_clients_1_1_gc_client_base.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_carrier_1_1_clients_1_1_gc_client_manager.html">GcClientManager</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Client Manager class that operate with client-system  <a href="class_game_carrier_1_1_clients_1_1_gc_client_manager.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_carrier_1_1_clients_1_1_gc_clients_module.html">GcClientsModule</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_game_carrier_1_1_clients_1_1_gc_clients_module.html" title="GcClientsModule class holds shared Container, allow register types, and resolve them in GcCommonModul...">GcClientsModule</a> class holds shared Container, allow register types, and resolve them in GcCommonModule scope  <a href="class_game_carrier_1_1_clients_1_1_gc_clients_module.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_carrier_1_1_clients_1_1_manager.html">Manager</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
@@ -95,6 +98,7 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespace_game_carrier_1_1_clients.html#ac42d34e7c773212bd2f95c3aa11ff0b7a4d3d769b812b6faa6b76e1a8abaece2d">Active</a>
 , <a class="el" href="namespace_game_carrier_1_1_clients.html#ac42d34e7c773212bd2f95c3aa11ff0b7afb1b6e23a3767d2a31ef7899e6dd3f1e">Hybrid</a>
  }</td></tr>
+<tr class="memdesc:ac42d34e7c773212bd2f95c3aa11ff0b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Client-system mode  <a href="namespace_game_carrier_1_1_clients.html#ac42d34e7c773212bd2f95c3aa11ff0b7">More...</a><br /></td></tr>
 <tr class="separator:ac42d34e7c773212bd2f95c3aa11ff0b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
@@ -109,11 +113,17 @@ Enumerations</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Client-system mode </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ac42d34e7c773212bd2f95c3aa11ff0b7a6adf97f83acf6453d4a6a4b1070f3754" name="ac42d34e7c773212bd2f95c3aa11ff0b7a6adf97f83acf6453d4a6a4b1070f3754"></a>None&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac42d34e7c773212bd2f95c3aa11ff0b7af80bc338b6146b566004a046f8137c85" name="ac42d34e7c773212bd2f95c3aa11ff0b7af80bc338b6146b566004a046f8137c85"></a>Passive&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac42d34e7c773212bd2f95c3aa11ff0b7a4d3d769b812b6faa6b76e1a8abaece2d" name="ac42d34e7c773212bd2f95c3aa11ff0b7a4d3d769b812b6faa6b76e1a8abaece2d"></a>Active&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac42d34e7c773212bd2f95c3aa11ff0b7afb1b6e23a3767d2a31ef7899e6dd3f1e" name="ac42d34e7c773212bd2f95c3aa11ff0b7afb1b6e23a3767d2a31ef7899e6dd3f1e"></a>Hybrid&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ac42d34e7c773212bd2f95c3aa11ff0b7a6adf97f83acf6453d4a6a4b1070f3754" name="ac42d34e7c773212bd2f95c3aa11ff0b7a6adf97f83acf6453d4a6a4b1070f3754"></a>None&#160;</td><td class="fielddoc"><p >Undefined mode. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac42d34e7c773212bd2f95c3aa11ff0b7af80bc338b6146b566004a046f8137c85" name="ac42d34e7c773212bd2f95c3aa11ff0b7af80bc338b6146b566004a046f8137c85"></a>Passive&#160;</td><td class="fielddoc"><p >Passive mode - Sends &amp; receives performed under call to GcClientManager.Instance.Service(). Calls to GcClientManager.Instance.Service() are not thread-safe. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac42d34e7c773212bd2f95c3aa11ff0b7a4d3d769b812b6faa6b76e1a8abaece2d" name="ac42d34e7c773212bd2f95c3aa11ff0b7a4d3d769b812b6faa6b76e1a8abaece2d"></a>Active&#160;</td><td class="fielddoc"><p >Active mode - Sends &amp; receives performed immediatelly from IO thread. No need to call GcClientManager.Instance.Service(). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac42d34e7c773212bd2f95c3aa11ff0b7afb1b6e23a3767d2a31ef7899e6dd3f1e" name="ac42d34e7c773212bd2f95c3aa11ff0b7afb1b6e23a3767d2a31ef7899e6dd3f1e"></a>Hybrid&#160;</td><td class="fielddoc"><p >Hybrid mode - Sends performed immediatelly from IO thread. Receives performed under call to GcClientManager.Instance.Service(). Calls to GcClientManager.Instance.Service() are thread-safe. </p>
+</td></tr>
 </table>
 
 </div>
